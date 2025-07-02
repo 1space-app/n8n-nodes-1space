@@ -48,6 +48,10 @@ export class OneSpaceNode implements INodeType {
 						name: 'Feed/Item',
 						value: 'feedItem',
 					},
+					{
+						name: 'Feed Subscription',
+						value: 'feedSubscription',
+					}
 				],
 				default: 'user',
 			},
