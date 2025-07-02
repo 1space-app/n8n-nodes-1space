@@ -30,7 +30,6 @@ export class OneSpaceNode implements INodeType {
 			baseURL: 'https://staging-api.1space.app/api',
 			headers: {
 				Accept: 'application/json',
-				'Content-Type': 'application/json',
 			},
 		},
 		properties: [
