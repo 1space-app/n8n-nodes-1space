@@ -37,18 +37,6 @@ export const feedItemOperations: INodeProperties[] = [
                 }
             },
             {
-                name: 'Mark as Unread',
-                value: 'markAsUnread',
-                description: 'Mark feed item as unread',
-                action: 'Mark feed item as unread',
-                routing: {
-                    request: {
-                        method: 'POST',
-                        url: '=/v1/feed/item/{{$parameter.itemId}}/unread'
-                    }
-                }
-            },
-            {
                 name: 'Mark as Star',
                 value: 'markAsStar',
                 description: 'Mark feed item as starred',
@@ -57,6 +45,18 @@ export const feedItemOperations: INodeProperties[] = [
                     request: {
                         method: 'POST',
                         url: '=/v1/feed/item/{{$parameter.itemId}}/star'
+                    }
+                }
+            },
+            {
+                name: 'Mark as Unread',
+                value: 'markAsUnread',
+                description: 'Mark feed item as unread',
+                action: 'Mark feed item as unread',
+                routing: {
+                    request: {
+                        method: 'POST',
+                        url: '=/v1/feed/item/{{$parameter.itemId}}/unread'
                     }
                 }
             },
