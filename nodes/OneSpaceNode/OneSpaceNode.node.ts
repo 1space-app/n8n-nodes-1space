@@ -4,6 +4,7 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionType } from 'n8n-workflow';
 import { userFields, userOperations } from './UserDescription';
+import { feedItemFields, feedItemOperations } from './FeedItemDescription';
 
 
 export class OneSpaceNode implements INodeType {
@@ -52,6 +53,8 @@ export class OneSpaceNode implements INodeType {
 			},
 			...userOperations,
 			...userFields,
+			...feedItemOperations,
+			...feedItemFields,
 		],
 	};
 }
