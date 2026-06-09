@@ -1,2 +1,4 @@
+allowBuilds:
+  eslint-plugin-n8n-nodes-base: set this to true or false
 onlyBuiltDependencies:
   - eslint-plugin-n8n-nodes-base

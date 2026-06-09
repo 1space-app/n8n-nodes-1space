@@ -28,7 +28,7 @@ export class OneSpaceNode implements INodeType {
 			},
 		],
 		requestDefaults: {
-			baseURL: 'https://staging-api.1space.app/api',
+			baseURL: 'https://api.1space.app/api',
 			headers: {
 				Accept: 'application/json',
 			},
@@ -64,4 +64,3 @@ export class OneSpaceNode implements INodeType {
 		],
 	};
 }
-

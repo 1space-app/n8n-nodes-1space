@@ -8,7 +8,7 @@ import {
 export class OneSpaceApi implements ICredentialType {
 	name = 'onespaceApi';
 	displayName = '1Space API';
-	documentationUrl = 'https://staging.1space.app/auth/api-keys';
+	documentationUrl = 'https://1space.app/auth/api-keys';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',
@@ -33,7 +33,7 @@ export class OneSpaceApi implements ICredentialType {
 	// The block below tells how this credential can be tested
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'https://staging-api.1space.app/api',
+			baseURL: 'https://api.1space.app/api',
 			url: '/v1/me',
 		},
 	};
